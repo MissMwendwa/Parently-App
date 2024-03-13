@@ -48,5 +48,5 @@ class Student(models.Model):
         
 
 class StudentBulkUpload(models.Model):
-    date_upload= models.DateTimeField(auto_not= True)
+    date_upload= models.DateTimeField(auto_now= True)
     csv_file = models.FileField(upload_to = "students/bulkupload/")
